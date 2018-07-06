@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/popup.css">
+  </head>
+  <body>
+    <div class="flexContainer">
+      <img src="icons/clear.png" alt="clear icône" id="clear" type="button" title="Effacer">
+      <!-- <a href="#" id="clear" type="button" title="Effacer"><i class="fa fa-trash-o"></i></a> -->
+      <input id="inputRegex" type="text" name="inputRegex" placeholder="Tapez une expression r&eacute;guli&egrave;re..."></input>
+      <span id="numResults"></span>
+      <a href="#" id="prev" type="button" title="Pr&eacute;c&eacute;dent"><i class="fa fa-angle-up"></i></a>
+      <a href="#" id="next" type="button" title="Prochain"><i class="fa fa-angle-down"></i></a>
+      <a href="#" id="insensitive" type="button" title="Insensible a la casse"><i class="fa fa-info"></i></a>
+      <a href="#" class="selected" id="show-history" type="button" title="Historique"><i class="fa fa-history"></i></a>
+    </div>
+    <div id="history">
+    </div>
+    <span id="error" class="error-chrome-regex"></span>
+  </body>
+
+  <script type="text/javascript" src="js/popup.js"></script>
+
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Regular Expression Finder Options</title>
+    <link rel="stylesheet" href="/css/options.css">
+    <script src="js/options.js"></script>
+  </head>
+  <body id="options">
+    <div class = "panel panel-default">
+      <div class="panel-heading"><h3 class="panel-title">Regular Expression Finder Settings</h3></div>
+      <div class="panel-body">
+        <div class="panel panel-default">
+          <div class="panel-heading">Quelles couleurs devraient &ecirc;tre utilis&eacute;es pour mettre en &eacute;vidence les correspondances regex sur la page web?</div>
+          <div class="panel-body">
+            <p><input id="highlightColor" type="color" /> <label for="highlightColor">Couleur de surbrillance</label></p>
+            <p><input id="selectedColor" type="color" /> <label for="selectedColor">Couleur s&eacute;lectionn&eacute;e</label></p>
+            <p><input id="textColor" type="color" /> <label for="colorText">Couleur du texte</label></p>
+            <p class="example-chrome-regex">C'est un texte <span id = "exampleHighlighted"> surlign&eacute;</span>.</p>
+            <p class="example-chrome-regex">C'est un texte <span id = "exampleSelected"> s&eacute;lectionn&eacute;</span> text.</p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Les r&eacute;sultats doivent-ils &ecirc;tre mis en &eacute;vidence instantan&eacute;ment au fur et &agrave; mesure de la frappe (comme Google Instant)??</div>
+          <div class="panel-body">
+            <input id="instantResults" type="checkbox" /> <label for="instantResults">Mise en &eacute;vidence instantan&eacute;e</label>
+            <br />
+            <small>Lorsque ceci est d&eacute;sactiv&eacute;, vous devez appuyer sur 'Entr&eacute;e' pour d&eacute;clencher une recherche de correspondances regex.</small>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Quel est le nombre maximum de correspondances regex qui devraient &ecirc;tre surlign&eacute;es sur la page web?</div>
+          <div class="panel-body">
+            <label for="maxResults">Max r&eacute;sultats</label> <input id="maxResults" type="text" name="maxResults" ></input>
+            <br />
+            <small>Plus ce nombre est petit, meilleures sont vos performances (en particulier pour les pages complexes).</small>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Quel est le nombre maximal d'enregistrements d'historique de recherche &agrave; stocker??</div>
+          <div class="panel-body">
+            <label for="maxHistoryLength">Max enregistrements</label> <input id="maxHistoryLength" type="text" name="maxHistoryLength" ></input>
+            <br />
+            <small>Le nombre d'enregistrements par d&eacute;faut est 30.</small>
+          </div>
+        </div>
+        <button id="buttonSave" type="save">Enregistrer les param&egrave;tres</button>
+        <button id="buttonReset" type="reset">R&eacute;initialiser les param&egrave;tres par d&eacute;faut</button>
+        <p id="status" class="status-chrome-regex"></p>
+      </div>
+    </div>
+  </body>
+</html>

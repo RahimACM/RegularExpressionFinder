@@ -1,0 +1,100 @@
+a:link, a:visited, #clear:link, #clear:visited {
+  display: block;
+  width: 2em;
+  padding: 0.2em;
+  background-color: #f2f2f2;
+  border: 1px solid transparent;
+  border-color: #aaa;
+  color: #000;
+  text-decoration: bold;
+  text-align: center;
+  float: right;
+  -webkit-box-shadow: inset 0 0 30px #fff;
+  box-shadow: inset 0 0 30px #fff;
+  border-radius: 2px;
+  -webkit-text-stroke: 2px rgba(0,0,0,1);
+}
+a:hover, #clear:hover, a.selected {
+  background-color: rgb(2, 100, 255, .7);
+  color: #000;
+ -webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, .125);
+         box-shadow: inset 0 3px 3px rgba(0, 0, 0, .125);
+  cursor: pointer;
+}
+#insensitive {
+  -webkit-text-stroke: 1px rgba(0,0,0,1);
+}
+#clear {
+  -webkit-text-stroke: 1px rgba(0,0,0,1);
+  width: 2em;
+  height: 2em;
+  margin-right: 4px;
+}
+#show-history {
+  -webkit-text-stroke: 0px;
+}
+.flexContainer {
+  position: relative;
+  text-align: right;
+  display: flex;
+}
+#inputRegex {
+  width: 15em;
+  border-radius: 2px;
+  padding-left: 1em;
+  padding-right: 2em;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .125);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .125);
+}
+#numResults {
+  position: absolute;
+  top: 0.25em;
+  right: 10em;
+  min-width: 4em;
+  max-width: 5em;
+  overflow:auto;
+  white-space: nowrap;
+  height: 1.6;
+  font-size: 10pt;
+}
+#history {
+  margin: 4px 2px;
+  display: none;
+}
+.historyDeleteEntry {
+  color: #f00;
+  cursor: pointer;
+  font-size: 1.2em;
+  float: left;
+  margin-right: 8px;
+  padding: 0.1em;
+}
+.historyLink {
+  color: rgb(2, 100, 255, 1);/*  #09d */
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 0.1em;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+  display: block;
+}
+.historyLink:hover {
+  text-decoration-line: underline;
+}
+.historyIsEmptyMessage {
+  font-style: italic;
+  color: #555;
+}
+
+.clearHistoryButton {
+  color: #000;
+  text-decoration: none;
+  width: 7em !important;
+  -webkit-text-stroke: 0.5px rgba(0,0,0,1) !important;
+  margin: 4px;
+}
+
+.error-chrome-regex {
+  color: #FF0000;
+  font-style: italic;
+}
